@@ -1,0 +1,33 @@
+@forward "reset";
+@use "variables";
+
+@font-face {
+  font-family: Roboto;
+  src: url(./src/assets/fonts/Roboto-Regular.ttf);
+  font-family: light;
+  src: url(./src/assets/fonts/Roboto-Light.ttf);
+}
+
+body {
+  background-color: var(--body);
+  font-family: Roboto;
+}
+.timer {
+  font-size: 86px;
+  font-family: light;
+  color: var(--black);
+}
+
+.controls {
+  .control {
+    width: 36px;
+    height: 36px;
+    background-color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    cursor: pointer;
+  }
+}

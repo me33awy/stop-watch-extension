@@ -2,12 +2,38 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Stop Watch</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <div
+      class="container vh-100 d-flex justify-content-center align-items-center"
+    >
+      <div class="content">
+        <div class="timer">00:00:00</div>
+        <div class="controls d-flex justify-content-center">
+          <section class="control play">
+            <i class="fa-solid fa-play"></i>
+          </section>
+          <section class="control pause">
+            <i class="fa-solid fa-pause"></i>
+          </section>
+          <section class="control refresh">
+            <i class="fa-sharp fa-solid fa-rotate-right"></i>
+          </section>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/979430a1a2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./main.js"></script>
   </body>
 </html>
