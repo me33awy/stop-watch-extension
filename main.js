@@ -2,11 +2,9 @@ const play = document.querySelector(".play");
 const pause = document.querySelector(".pause");
 const refresh = document.querySelector(".refresh");
 const timer = document.querySelector(".timer");
-// console.log(play);
-// console.log(pause);
-// console.log(refresh);
-let [hours, mins, secs] = [0, 0, 0];
+let [hours, mins, secs] = [00, 00, 00];
 function startCounter() {
+  timer.innerHTML = "00:00:00";
   secs++;
   if (secs == 60) {
     secs = 0;
@@ -16,8 +14,17 @@ function startCounter() {
       hours++;
     }
   }
-  timer.innerHTML = `${hours} : ${mins} : ${secs}`;
+  let h = hours < 10 ? "0" + hours : hours;
+  let m = mins < 10 ? "0" + mins : mins;
+  let s = secs < 10 ? "0" + secs : secs;
+  timer.innerHTML = `${h}:${m}:${s}`;
 }
 play.addEventListener("click", () => {
-  setInterval(startCounter);
+  let int = setInterval(startCounter, 10);
+  pause.addEventListener("click", () => {
+    clearInterval(int);
+  });
+  refresh.addEventListener("click", () => {
+    timer.textContent = "00:00:00";
+  });
 });
