@@ -9,6 +9,10 @@
       rel="stylesheet"
       href="node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -17,23 +21,19 @@
     >
       <div class="content">
         <div class="timer">00:00:00</div>
-        <div class="controls d-flex justify-content-center">
+        <div class="controls">
           <section class="control play">
-            <i class="fa-solid fa-play"></i>
+            <i class="bi bi-play-fill"></i><span>Play</span>
           </section>
           <section class="control pause">
-            <i class="fa-solid fa-pause"></i>
+            <i class="bi bi-pause-fill"></i><span>Pause</span>
           </section>
           <section class="control refresh">
-            <i class="fa-sharp fa-solid fa-rotate-right"></i>
+            <i class="bi bi-arrow-clockwise"></i><span>Reset</span>
           </section>
         </div>
       </div>
     </div>
-    <script
-      src="https://kit.fontawesome.com/979430a1a2.js"
-      crossorigin="anonymous"
-    ></script>
     <script src="./main.js"></script>
   </body>
 </html>
