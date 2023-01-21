@@ -1,7 +1,6 @@
 {
-  "manifest_version": 3,
-  "name": "Stop watch",
-  "description": "Base Level Extension",
+  "name": "Stop Watch",
+  "description": "A stopwatch is a timepiece designed to measure the amount of time that elapses between its activation and deactivation.",
   "version": "1.0",
   "action": {
     "default_popup": "index.html"
