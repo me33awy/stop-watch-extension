@@ -1,5 +1,5 @@
 {
-  "manifest_version": "3",
+  "manifest_version": 3,
   "name": "Stop Watch",
   "description": "A stopwatch is a timepiece designed to measure the amount of time that elapses between its activation and deactivation.",
   "version": "1.0",
