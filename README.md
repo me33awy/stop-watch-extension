@@ -3,5 +3,5 @@ Installing Chrome extensions manually from GitHub is a great way to pass around 
 
 1. Clone Repo or Download Zip
 2. Visit chrome://extensions/ and turn on "Developer mode"
-3. Click "Load unpacked" button and navivigate to the folder you downloaded from GitHub
+3. Click "Load unpacked" button and navigate to the folder you downloaded from GitHub
 That's it enjoy!
